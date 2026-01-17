@@ -1783,11 +1783,18 @@ p:last-child {
     }
 
     .nav__list {
-        gap: var(--spacing-md);
+        gap: var(--spacing-sm);
+    }
+
+    .nav__link {
+        font-size: var(--text-sm);
+        padding: var(--spacing-xs) var(--spacing-sm);
     }
 
     .header__cta {
-        display: block;
+        display: inline-flex;
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: var(--text-sm);
     }
 
     .header__phone {
@@ -1811,10 +1818,20 @@ p:last-child {
     }
 }
 
-/* Large Desktop (1200px+) - show phone */
+/* Large Desktop (1200px+) - show phone and more spacing */
 @media (min-width: 1200px) {
     .nav__list {
-        gap: var(--spacing-lg);
+        gap: var(--spacing-md);
+    }
+
+    .nav__link {
+        font-size: var(--text-base);
+        padding: var(--spacing-sm) 0;
+    }
+
+    .header__cta {
+        padding: var(--spacing-md) var(--spacing-xl);
+        font-size: var(--text-base);
     }
 
     .header__phone {
@@ -1867,12 +1884,14 @@ p:last-child {
     background-color: var(--jbp-primary);
 }
 
-/* Updated Header & Navigation */
-.header .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: var(--spacing-md) 0;
+/* Updated Header & Navigation - only show nav on desktop */
+@media (min-width: 1024px) {
+    .header .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: var(--spacing-md) 0;
+    }
 }
 
 .logo {
