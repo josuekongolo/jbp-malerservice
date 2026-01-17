@@ -1,0 +1,12 @@
+# Robots.txt for JBP Malerservice AS
+# https://jbpmalerservice.no
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://jbpmalerservice.no/sitemap.xml
+
+# Disallow admin or sensitive directories (if any)
+# Disallow: /admin/
+# Disallow: /private/
