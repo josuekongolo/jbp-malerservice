@@ -2178,6 +2178,28 @@ p:last-child {
     aspect-ratio: 16/10;
 }
 
+/* Real Images */
+.about-image {
+    width: 100%;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+}
+
+.craftsmanship-image {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+}
+
+.project-img {
+    width: 100%;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
 /* ----------------------------------------
    Services Page (tjenester.html)
    ---------------------------------------- */
