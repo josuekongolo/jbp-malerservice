@@ -516,7 +516,7 @@ p:last-child {
     bottom: 0;
     background-size: cover;
     background-position: center;
-    opacity: 0.15;
+    z-index: 0;
 }
 
 .hero__overlay {
@@ -525,12 +525,13 @@ p:last-child {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.95) 0%, rgba(29, 78, 216, 0.9) 100%);
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.75) 0%, rgba(29, 78, 216, 0.8) 100%);
+    z-index: 1;
 }
 
 .hero__content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     max-width: 700px;
     padding: var(--spacing-4xl) 0;
 }
